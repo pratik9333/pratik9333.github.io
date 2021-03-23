@@ -1,0 +1,153 @@
+@media (min-width: 1037px)
+{
+    input[type=text],input[type=email],input[type=number],input[type=select]
+    {
+        width: 45%;
+    }
+    button
+    {
+        width: 25%;
+    }
+    .selectOptn
+    {
+        width: 49%;
+    }      
+}
+@media (max-width: 1036px)
+{
+    input[type=text],input[type=email],input[type=number],input[type=select]
+    {
+        width: 82%;
+    }
+    button
+    {
+        width: 100%;
+    }
+    .selectOptn
+    {
+        width: 95%;
+    }      
+}
+*
+{
+    margin: 0px;
+}
+html
+{
+    background: #2bc0e4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2bc0e4, #eaecc6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2bc0e4, #eaecc6);
+}
+body
+{
+    font-family: Nunito, sans-serif;
+    letter-spacing: 1px;
+}
+.row
+{
+    background-color: white;
+    margin: 5% 8%;
+    box-shadow: 1px 0px 9px 1px gray;
+    padding: 5% 6%;
+}
+.label-class
+{
+    display: block;
+}
+.Heading
+{
+    border-bottom: 1px solid;
+    margin-bottom: 50px;
+}
+.Heading h1
+{
+    margin-bottom: 7px;
+    font-weight: revert;
+    font-size: 24px;
+}
+input[type=text],input[type=email],input[type=number]  
+{
+    padding: 17px 17px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    border: 0px solid #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    margin-left: 0px;
+    outline: none;
+    transition: box-shadow 0.5s;
+}
+
+::placeholder 
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    font-size: 12px;
+    opacity: 0.7;
+}
+.selectOptn
+{
+    padding: 17px 17px;
+    font-size: 12px;
+    background-color: #f5f5f5;
+    border: 0px solid #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    margin-left: 0px;
+    outline: none;
+    transition: box-shadow 0.5s;
+}
+.checkbox
+{
+    width: 50px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+    transition: box-shadow 0.5s;
+}
+h2
+{
+    margin-bottom: 23px;
+}
+hr
+{
+    margin-bottom: 40px;
+}
+.text
+{
+    text-align: center;
+    font-weight: 700;
+}
+button
+{
+    font-size: 17px;
+    height: 56px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background-color: #2BC0E4;
+    border-radius: 4px;
+    transition: background-color 0.5s;
+}
+button:hover
+{
+    background-color: #2BC0FF;
+}
+input[type=text]:focus
+{
+    box-shadow: 2px 1px 5px 1px #2BC0E4;
+}
+input[type=email]:focus
+{
+    box-shadow: 2px 1px 5px 1px #2BC0E4;
+}
+input[type=number]:focus
+{
+    box-shadow: 2px 1px 5px 1px #2BC0E4;
+}
+.selectOptn:focus
+{
+    box-shadow: 2px 1px 5px 1px #2BC0E4;
+}

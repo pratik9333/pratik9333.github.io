@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="index_layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About|The Little Architecture Company</title>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            var y=document.getElementById("abt");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+            if(y.className === "about")
+            {
+                y.style.marginTop="462px";
+            }
+            if(x.className === "topnav")
+            {
+                y.style.marginTop="100px";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topnav" id="myTopnav">
+            <img src="images/logo.png" style="padding-top: 14.4px;" alt="">
+            <a href="contact.html">Contact</a>
+            <a href="Project.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="about" id="abt">
+            <h1>about us</h1>
+            <p>
+                The Little Architecture Company was established in 2014 and is based in Solihull. The practice is led by
+                Nicola Hopwood who is a chartered architect registered with the RIBA and ARB.
+                <br><br><br>
+                We work with individuals, families and developers delivering new-build and refurbishment projects across
+                the
+                West Midlands, Warwickshire and Worcestershire. Our work is centered in Solihull, Knowle, Dorridge,
+                Lapworth, Henley in Arden, Harborne and Kings Heath and further afield in Dorset, Somerset and
+                Shropshire.
+                <br><br><br>
+                The Little Architecture Company specialises in housing, ranging from property extensions to major
+                refurbishments and new-builds. We also have experience in masterplanning, apartment developments and
+                individual country residences. Other sector experience includes leisure and retail, education and the
+                Home
+                Office (police/custodial).
+                <br><br><br>
+                We understand that each of our clients has unique requirements and aspirations. We offer a personalised
+                service to create spaces and buildings that delight and add value. We offer a bespoke service from
+                sketch
+                concept options, through to full planning permission and delivery on site. We have close links with
+                reliable
+                and skilled builders, engineers and quantity surveyors to assist in bringing your project to life.
+            </p>
+        </div>
+        <div class="Img">
+            <div class="Img_sec1">
+                <img src="images/Nicola-Hopwood.jpg" alt="">
+                <div class="Img_sec2">
+                    <h2>Nicola Hopwood</h2>
+                    <p>
+                        Nicola was educated at the Bartlett School of Architecture, University College London and was
+                        awarded runner-up to the RIBA President’s Silver Medal in 1997. Since graduating, Nicola has
+                        worked for Stirling Prize winners Allford Hall Monaghan Morris, later becoming an Associate
+                        Director at Glenn Howells Architects. Here she was responsible for delivering award-winning
+                        projects, with clients including Urban Splash, Hammerson, Argent and Kent Police. Nicola also
+                        led the team responsible for the design and delivery of Team GBs accommodation at the London
+                        2012 Olympics with LendLease and the Olympic Delivery Authority.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="sec1">
+                <h2>Past Projects</h2><br>
+            </div>
+            <div class="sec2">
+                <img src="images/one.jpg" alt="">
+                <img src="images/two.jpg" alt="">
+                <img src="images/three.jpg" alt="">
+                <img src="images/four.jpg" alt="">
+                <img src="images/five.jpg" alt="">
+                <img src="images/six.jpg" alt="">
+                <img src="images/seven.jpg" alt="">
+                <img src="images/eight.jpg" alt="">
+            </div>
+        </div>
+        <div class="contact">
+            <div class="c_section1i">
+                <h2 style="color:white;font-size: 35px;">
+                    Contact us
+                </h2>
+                <p>
+                    We would be very happy to arrange a consultation. <br>
+                    Please contact Nicola Hopwood.
+                </p>
+                <br>
+                <a href=""><input type="button" value="BOOK A CONSULTATION" id="button"></a>
+            </div>
+            <div class="c_section2">
+                <p>
+                    “The Little Architecture Company listened very carefully to our needs and provided innovative and
+                    thoughtful design options for our complex project. Nicola’s proactive management allowed the project
+                    to run smoothly on site. We are so happy with our re-modelled house – it has completely changed the
+                    way we live and interact as a family.“
+                </p>
+            </div>
+        </div>
+        <div class="foo">
+            <div class="f_section1">
+                <img src="images/Little-Architecture-Logo-white-04-1536x118.png" alt="">
+                <br><br>
+                <p>t: 07917 805032</p>
+                <p>e: nicola.t.hopwood@gmail.com</p>
+            </div>
+            <div class="f_section2">
+                <img src="images/RIBA.png" alt="">
+                <img src="images/architects-registration-board.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
