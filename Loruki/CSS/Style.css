@@ -1,0 +1,202 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body 
+{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar-brand
+{
+    font-size: 1.9rem;
+    color: white;
+    font-weight: 300;
+}
+.nav-link
+{
+    color: #fff;
+}
+.navbar-nav li
+{
+    padding-right: 2.5rem;
+}
+.nav-item
+{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Showcase */
+
+.showcase
+{
+    position: relative;
+    height: auto;
+}
+.cons
+{
+    position: relative;
+    top: 43px;
+}
+.con
+{
+    border-radius: 7px;
+    padding-top: 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    z-index: 100;
+    position: relative;
+}
+.showcase::before,
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+/* Stats */
+
+.margin
+{
+    margin-top: 50px;
+}
+.pos
+{
+    position: relative;
+    bottom: 1px;
+}
+/* CLI */
+.breadcrumb
+{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* Hosting */
+
+.hosting h2
+{
+    font-size: 3.2rem;
+}
+.hosting p
+{
+    font-size: 1.3rem;
+}
+.hosting button
+{
+    font-size: 17px;
+}
+
+/* Languages */
+
+.custom-card
+{
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding: 20px;
+    transition: transform 0.2s ease-in;
+}
+.custom-card:hover
+{
+    transform: translateY(-15px);
+}
+
+/* Footer */
+
+.footer
+{
+    background-color: #002240;
+    color: white;
+}
+.footer h3
+{
+    font-size: 34px;
+}
+.footer h5
+{
+    font-size: 15px;
+}
+
+/* Feature Section CSS */
+
+.nav-features .img-fluid
+{
+    max-width: 80%;
+}
+
+.platform .img-fluid
+{
+    max-width: 90%;
+}
+.card1
+{
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+.layout_card
+{
+    display: flex;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding:21px 16px 21px 16px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.layout_card p
+{
+    font-weight: 300;
+}
+
+/* Doc Section CSS */
+
+.nav-head .img-fluid
+{
+    max-width: 80%;
+}
+.par
+{
+    font-size: 1.08rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: 300;
+}
+.cards
+{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+.cards h4
+{
+    font-size: 20px;
+}
+.alert
+{
+    padding: 0.60rem 1.25rem;
+}
+.cards-2
+{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    padding: 30px 19px 10px 19px;
+}
