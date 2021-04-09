@@ -8,7 +8,18 @@ body
 {
     border: 1px solid;
 }
-
+.card
+{
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, color 1s;
+}
+.card:hover
+{
+    color: white;
+    transform: translateY(-10px);
+    background-color: #333;
+    transform: translateX(-15deg);
+}
 /* Media Queries */
 @media screen and (max-width:991px) {
     .form-inline .form-control{
