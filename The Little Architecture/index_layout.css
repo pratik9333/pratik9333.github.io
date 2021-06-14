@@ -106,7 +106,7 @@ body
 
 .bg-img 
 {
-  background-image: url("images/header_img.jpeg");
+  background-image: url("../images/header_img.jpeg");
   min-height: 646px;
   background-position: center;
   background-repeat: no-repeat;
