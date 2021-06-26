@@ -1,54 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/Style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="CSS/Style.css" />
     <script src="JS/JS.js"></script>
     <title>Payment Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="Form" id="container">
-        <form action="" onsubmit="return Validate()">
-            <h1>Payment Form</h1><hr>
-            <h2>User Information</h2>
-            <label for="">Name:</label>
-            <input type="text" onkeyup="Validate_name()" placeholder="Enter Name" required>
-            <strong><span id="Ern" class="Err">*Enter Correct Name</span></strong>
-            <br><br>
-            <fieldset>
-                <legend>Gender:</legend>
-                <input type="radio" name="gender" id="" required>Male
-                <input type="radio" name="gender" id="" required>Female
-            </fieldset><br><br>
-            <label for="">Address:</label>
-            <textarea placeholder="Enter Address" cols="30" rows="5" required></textarea><br><br>
-            <label for="">Email:</label>
-            <input type="text" onkeyup="Validate_email()" placeholder="Enter E-mail" required><span id="Ere" class="Err">*Enter Correct Email</span><br><br>
-            <label for="">Pincode*</label>
-            <input type="number" onkeyup="Validate_pc()"  placeholder="Enter Pincode" required><span id="Erp" class="Err">*Enter Correct Pincode</span><br>
-            <h2>Payment Information:</h2>
-            <strong><p>Accepted Cards</p></strong>
-            <i class="fa fa-cc-visa" id="visa" style="font-size: 35px;color: darkblue;"></i> &nbsp;
-            <i class="fa fa-cc-discover" id="dsvr" style="font-size: 35px;color: darkgoldenrod;"></i> &nbsp;
-            <i class="fa fa-cc-amex" id="ae" style="font-size: 35px;color: steelblue;"></i> &nbsp;
-            <i class="fa fa-cc-mastercard" id="mc" style="font-size: 35px;color: deeppink;"></i> &nbsp;
-            <br><br>
-            <label for="">Card Type:</label>
-            <select id="card" onchange="Validate_ct()">
-                <option value="--Select Card Type--">--Select Card Type--</option>
-                <option value="Debit">Debit</option>
-                <option value="Credit">Credit</option>
-            </select><span id="Erct" class="Err">*Select Card type</span><br><br>
-            <label for="">Card Number:</label>
-            <input type="number" onkeyup="Validate_cn()" placeholder="111-222-333-444" required><span id="Erc" class="Err">*Enter Correct Card No</span><br><br>
-            <label for="">Expiration Date:</label>
-            <input type="date" required><br><br>
-            <label for="">CVV</label>
-            <input type="number" onkeyup="Validate_cvv()" placeholder="123" required><span id="Ercv" class="Err">*Enter Correct CVV</span><br><br>
-            <button id="submit">Pay Now</button>
-        </form>
+      <form action="" onsubmit="return Validate()">
+        <h1>Payment Form</h1>
+        <hr />
+        <h2>User Information</h2>
+        <label for="">Name:</label>
+        <input
+          type="text"
+          onkeyup="Validate_name()"
+          placeholder="Enter Name"
+          required
+        />
+        <strong><span id="Ern" class="Err">*Enter Correct Name</span></strong>
+        <br /><br />
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="radio" name="gender" id="" required />Male
+          <input type="radio" name="gender" id="" required />Female
+        </fieldset>
+        <br /><br />
+        <label for="">Address:</label>
+        <textarea
+          placeholder="Enter Address"
+          cols="30"
+          rows="5"
+          required
+        ></textarea
+        ><br /><br />
+        <label for="">Email:</label>
+        <input
+          type="text"
+          onkeyup="Validate_email()"
+          placeholder="Enter E-mail"
+          required
+        /><span id="Ere" class="Err">*Enter Correct Email</span><br /><br />
+        <label for="">Pincode*</label>
+        <input
+          type="number"
+          onkeyup="Validate_pc()"
+          placeholder="Enter Pincode"
+          required
+        /><span id="Erp" class="Err">*Enter Correct Pincode</span><br />
+        <h2>Payment Information:</h2>
+        <strong><p>Accepted Cards</p></strong>
+        <i
+          class="fa fa-cc-visa"
+          id="visa"
+          style="font-size: 35px; color: darkblue"
+        ></i>
+        &nbsp;
+        <i
+          class="fa fa-cc-discover"
+          id="dsvr"
+          style="font-size: 35px; color: darkgoldenrod"
+        ></i>
+        &nbsp;
+        <i
+          class="fa fa-cc-amex"
+          id="ae"
+          style="font-size: 35px; color: steelblue"
+        ></i>
+        &nbsp;
+        <i
+          class="fa fa-cc-mastercard"
+          id="mc"
+          style="font-size: 35px; color: deeppink"
+        ></i>
+        &nbsp; <br /><br />
+        <label for="">Card Type:</label>
+        <select id="card" onchange="Validate_ct()">
+          <option value="--Select Card Type--">--Select Card Type--</option>
+          <option value="Debit">Debit</option>
+          <option value="Credit">Credit</option></select
+        ><span id="Erct" class="Err">*Select Card type</span><br /><br />
+        <label for="">Card Number:</label>
+        <input
+          type="number"
+          onkeyup="Validate_cn()"
+          placeholder="111-222-333-444"
+          required
+        /><span id="Erc" class="Err">*Enter Correct Card No</span><br /><br />
+        <label for="">Expiration Date:</label>
+        <input type="date" required /><br /><br />
+        <label for="">CVV</label>
+        <input
+          type="number"
+          onkeyup="Validate_cvv()"
+          placeholder="123"
+          required
+        /><span id="Ercv" class="Err">*Enter Correct CVV</span><br /><br />
+        <button id="submit">Pay Now</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>

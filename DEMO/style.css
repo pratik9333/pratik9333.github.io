@@ -11,14 +11,14 @@ body
 }
 .logo
 {
-    max-width: 91%;
+    max-width: 81%;
     height: auto;
 }
 .dropdown:hover > .dropdown-menu {
     display: block;
 }
   
-  .dropdown > .dropdown-toggle:active {
+.dropdown > .dropdown-toggle:active {
     pointer-events: none;
 }
 
@@ -178,5 +178,11 @@ div.scrollmenu {
 @media screen and (max-width: 761px){
     .back{
         height: 350px;
+    }
+}
+@media screen and (max-width: 700px){
+    .navbar-brand .img-fluid{
+        max-width: 60%;
+    height: auto;
     }
 }
