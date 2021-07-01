@@ -36,33 +36,33 @@ body {
   content: "\f095";
   padding-right: 10px;
 }
-.btn {
+.header .btn {
   transition: none;
   font-size: 14px;
   border-radius: 0px;
   position: relative;
   bottom: 6px;
 }
-.btn:hover {
+.header .btn:hover {
   color: white;
   background-color: transparent;
 }
 
-.btn-outline-light:not(:disabled):not(.disabled).active,
-.btn-outline-light:not(:disabled):not(.disabled):active,
-.show > .btn-outline-light.dropdown-toggle {
+.header .btn-outline-light:not(:disabled):not(.disabled).active,
+.header .btn-outline-light:not(:disabled):not(.disabled):active,
+.header .show > .btn-outline-light.dropdown-toggle {
   color: white;
   background-color: transparent;
 }
 
-.btn-outline-light.focus,
-.btn-outline-light:focus {
+.header .btn-outline-light.focus,
+.header .btn-outline-light:focus {
   box-shadow: 0 0 0 0rem rgb(248 249 250 / 0%);
 }
 
-.btn-outline-light:not(:disabled):not(.disabled).active:focus,
-.btn-outline-light:not(:disabled):not(.disabled):active:focus,
-.show > .btn-outline-light.dropdown-toggle:focus {
+.header .btn-outline-light:not(:disabled):not(.disabled).active:focus,
+.header .btn-outline-light:not(:disabled):not(.disabled):active:focus,
+.header .show > .btn-outline-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgb(248 249 250 / 0%);
 }
 .dropdown-item {
