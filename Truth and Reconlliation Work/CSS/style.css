@@ -374,7 +374,20 @@ time.icon span {
   background-color: #ffffff;
 }
 .mem h1 {
-  font-size: 37px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+.mem p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
 }
 .fac {
   background-color: #ffffff;
@@ -613,6 +626,13 @@ time.icon span {
   align-items: center;
 }
 .flex-row p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.msg-para {
   font-family: Lato;
   font-style: normal;
   font-weight: 600;
