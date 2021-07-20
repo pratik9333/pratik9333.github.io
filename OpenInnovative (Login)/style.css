@@ -177,6 +177,8 @@ body {
   }
   .login {
     margin-top: 5px;
+    display: flex;
+    align-items: baseline;
   }
   .create-acc-sec {
     margin-top: 23px;

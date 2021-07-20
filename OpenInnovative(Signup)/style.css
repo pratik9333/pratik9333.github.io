@@ -170,7 +170,8 @@ body {
     flex-direction: column;
   }
   .login {
-    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
   }
   .login span {
     padding-right: 10px;
@@ -180,6 +181,15 @@ body {
   }
   .button-filled {
     padding: 13px 40px;
+  }
+  .create-acc-sec {
+    margin-top: 13px;
+  }
+  body {
+    margin: 0px 0px;
+  }
+  .container {
+    margin: 0px 20px;
   }
 }
 @media (max-width: 560px) {
@@ -200,5 +210,25 @@ body {
   }
   .container {
     margin: 20px;
+  }
+  .input-box {
+    margin-bottom: 7px;
+  }
+  .input-sec {
+    margin-top: 0px;
+  }
+  .sec-2-input {
+    margin-top: 20px;
+  }
+  .signup-row-2 {
+    grid-gap: 0.6rem;
+  }
+  .button-outline {
+    padding: 10px 25px;
+    font-size: 20px;
+  }
+  .button-filled {
+    padding: 10px 27px;
+    font-size: 20px;
   }
 }
