@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+body {
+  background: url("./Images/Bg-Img.png") no-repeat center center/cover;
+  font-family: "Lato", sans-serif;
+  color: #100e0b;
+  font-size: 24px;
+  line-height: 32px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.container {
+  max-width: 1375px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 24px rgba(183, 183, 183, 0.25);
+  display: flex;
+  margin: 60px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.font-size1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.font-size2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+}
+.input {
+  border: 1px solid #ef5c50;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 100px;
+  margin-top: 10px;
+  padding: 18px 18px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #888888;
+}
+.button-filled {
+  border: none;
+  outline: none;
+  background: #ef5c50;
+  border-radius: 43px;
+  padding: 15px 60px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: -0.225px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.6s;
+}
+.button-filled:hover {
+  opacity: 0.9;
+}
+.button-outline {
+  outline: none;
+  border: 2px solid #ef5c50;
+  border-radius: 43px;
+  padding: 15px 44px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.225px;
+  color: #ef5c50;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.signup-row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0px 28px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+#back::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f30a";
+  font-weight: 700;
+  color: black;
+  padding-right: 4px;
+  font-size: 18px;
+}
+.login {
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.login span {
+  color: #888888;
+  padding-right: 15px;
+}
+.signup-row-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.input-sec {
+  margin-top: 20px;
+}
+.img-signup {
+  background: url("./Images/Rectangle\ 16.png") no-repeat center center/cover;
+}
+.sec-1-input p {
+  color: #888888;
+}
+.sec-2-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 73px;
+  margin-top: 50px;
+}
+.sec-2-input span {
+  margin-left: 15px;
+}
+.input-box {
+  margin-bottom: 28px;
+}
+.signup {
+  margin-top: 12px;
+}
+.create-acc-sec {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#acc {
+  display: flex;
+  align-items: center;
+}
+#acc::after {
+  content: url("./Images/Group\ 47.svg");
+  width: 54px;
+  height: 54px;
+  padding-left: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1100px) {
+  .signup-row-2 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 640px) {
+  .signup-row-1 {
+    flex-direction: column;
+  }
+  .login {
+    margin-top: 5px;
+  }
+  .create-acc-sec {
+    margin-top: 23px;
+    margin-bottom: 0px;
+  }
+  .login span {
+    padding-right: 10px;
+  }
+  .input-box {
+    margin-bottom: 16px;
+  }
+  .button-outline {
+    padding: 10px 36px;
+  }
+  .button-filled {
+    padding: 13px 40px;
+  }
+}
+@media (max-width: 560px) {
+  .login button {
+    margin-top: 20px;
+  }
+  .font-size2 {
+    font-size: 38px;
+  }
+  .font-size1 {
+    font-size: 17px;
+  }
+  .sec-2-input {
+    padding-right: 20px;
+  }
+  .container {
+    margin: 20px;
+  }
+  .input-sec {
+    margin-top: 0px;
+  }
+  .sec-2-input {
+    margin-top: 20px;
+  }
+  .signup-row-2 {
+    grid-gap: 0.6rem;
+  }
+  .button-outline {
+    padding: 10px 25px;
+  }
+  .button-filled {
+    padding: 10px 27px;
+  }
+}

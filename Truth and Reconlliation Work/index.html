@@ -55,7 +55,8 @@
                 <h1>Lorem ipsum dolor sit amet.</h1>
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <button class="button">
-                  Events <i class="fas fa-chevron-right"></i
+                  <span class="button-font-margin"> Events </span>
+                  <i class="fas fa-chevron-right"></i
                   ><i class="fas fa-chevron-right"></i>
                 </button>
               </div>
@@ -82,7 +83,8 @@
             </p>
             <p class="star">Interested in our events?</p>
             <button class="button" style="margin-left: 52px; margin-top: 24px">
-              See All Events <i class="fas fa-chevron-right"></i
+              <span class="button-font-margin">See All Events </span
+              ><i class="fas fa-chevron-right"></i
               ><i class="fas fa-chevron-right"></i>
             </button>
           </div>
@@ -206,7 +208,9 @@
         <h1>Recently Added Events</h1>
         <div class="more">
           <div class="more-img1">
-            <img src="./Images/event-img-5.jpg" alt="" />
+            <div class="recent-event-img">
+              <img src="./Images/bgimg.jpg" alt="" />
+            </div>
             <div
               style="color: #18a558; background-color: white"
               class="top-right"
@@ -312,8 +316,8 @@
     <!-- Humanity -->
     <section class="humanity">
       <div class="humanity-cont">
-        <div>
-          <img src="./Images/image.png" alt="" />
+        <div class="humanity-img">
+          <img src="./Images/Image.png" alt="" />
         </div>
         <div style="padding-right: 50px; padding-left: 20px">
           <h2>
@@ -328,8 +332,9 @@
           </p>
           <br />
           <p class="bell">Get Notifications for latest events</p>
-          <button class="button">
-            See All Events <i class="fas fa-chevron-right"></i
+          <button style="margin-left: 50px; margin-top: 15px" class="button">
+            <span class="button-font-margin">See All Events</span>
+            <i class="fas fa-chevron-right"></i
             ><i class="fas fa-chevron-right"></i>
           </button>
         </div>
@@ -343,7 +348,8 @@
           <div><h2>Our Community</h2></div>
           <div>
             <button class="button" style="margin-top: 0">
-              View all <i class="fas fa-chevron-right"></i
+              <span class="button-font-margin">View all</span>
+              <i class="fas fa-chevron-right"></i
               ><i class="fas fa-chevron-right"></i>
             </button>
           </div>
@@ -356,13 +362,13 @@
             <br />
             <div class="partners">
               <div class="par">
-                <img src="./Images/p1.png" style="width: 100%" alt="" />
+                <img src="./Images/p1.png" alt="" />
+              </div>
+              <div class="par img">
+                <img src="./Images/p2.png" alt="" />
               </div>
               <div class="par">
-                <img src="./Images/p2.png" style="width: 50%" alt="" />
-              </div>
-              <div class="par">
-                <img src="./Images/p3.png" style="width: 38%" alt="" />
+                <img src="./Images/p3.png" alt="" />
               </div>
               <div class="mem">
                 <h1>+250</h1>
@@ -377,7 +383,7 @@
             <br />
             <div class="partners">
               <div class="fac">
-                <img src="./Images/Rectangle 4.svg" alt="" />
+                <img src="./Images/f1.jpg" alt="" />
                 <div style="padding: 22px">
                   <span style="font-size: 14px; font-weight: 700"
                     >Beatrace Wade</span
@@ -397,7 +403,7 @@
                 </div>
               </div>
               <div class="fac">
-                <img src="./Images/Rectangle 42.svg" alt="" />
+                <img src="./Images/f2.jpg" alt="" />
                 <div style="padding: 22px">
                   <span style="font-size: 14px; font-weight: 700"
                     >Beatrace Wade</span
@@ -417,7 +423,7 @@
                 </div>
               </div>
               <div class="fac">
-                <img src="./Images/Rectangle 43.svg" alt="" />
+                <img src="./Images/f4.jpg" alt="" />
                 <div style="padding: 22px">
                   <span style="font-size: 14px; font-weight: 700"
                     >Beatrace Wade</span
@@ -437,7 +443,7 @@
                 </div>
               </div>
               <div class="fac">
-                <img src="./Images/Rectangle 44.svg" alt="" />
+                <img src="./Images/f4.jpg" alt="" />
                 <div style="padding: 22px">
                   <span style="font-size: 14px; font-weight: 700"
                     >Beatrace Wade</span
@@ -512,13 +518,13 @@
         <div class="recentpost-main">
           <div style="align-self: center">
             <button class="arrows">
-              <i class="fas fa-chevron-right"></i
-              ><i class="fas fa-chevron-right"></i>
+              <i class="fas fa-chevron-left"></i
+              ><i class="fas fa-chevron-left"></i>
             </button>
           </div>
           <div class="card">
             <div>
-              <img src="./Images/pen.png" alt="" />
+              <img src="./Images/pen.jpg" alt="" />
             </div>
             <div class="content-card">
               <div>
@@ -553,7 +559,7 @@
           </div>
           <div class="card">
             <div>
-              <img src="./Images/girl-card.png" alt="" />
+              <img src="./Images/stones-card.jfif" alt="" />
             </div>
             <div class="content-card">
               <div>
@@ -588,7 +594,7 @@
           </div>
           <div class="card">
             <div>
-              <img src="./Images/stone-card.png" alt="" />
+              <img src="./Images/stones-card.jfif" alt="" />
             </div>
             <div class="content-card">
               <div>
@@ -659,29 +665,36 @@
           </div>
           <div class="contact-main-sec2">
             <div class="flex-row">
-              <div class="input-box">
+              <div class="input-box" style="width: 244px">
                 <p>Full Name</p>
-                <input type="text" placeholder="enter name" class="input" />
+                <input type="text" class="input" required />
               </div>
-              <div class="input-box row1">
+              <div class="input-box row1" style="width: 244px">
                 <p>Email</p>
                 <input
                   type="text"
                   placeholder="yourmail@address.com"
                   class="input"
+                  required
                 />
               </div>
             </div>
             <div class="flex-row">
-              <div class="input-box row1">
+              <div class="input-box row1" style="width: 244px">
                 <p>Phone</p>
-                <input type="text" placeholder="121-666-999" class="input" />
+                <input type="number" class="input" required />
               </div>
-              <div class="input-box row1">
+              <div class="input-box row1" style="width: 244px">
                 <p>Reason</p>
-                <select name="" id="" class="input" style="padding: 15px 58px">
-                  <option value="">
-                    <span class="facaliator">Join as faciliator</span>
+                <select
+                  name=""
+                  id="select"
+                  class="input facaliator"
+                  style="width: 100%"
+                  required
+                >
+                  <option disabled selected hidden value="">
+                    Join as faciliator
                   </option>
                 </select>
               </div>
@@ -690,11 +703,12 @@
               <div class="input-box row1">
                 <p class="msg-para">Message</p>
                 <textarea
-                  class="input"
+                  class="input area"
                   name=""
                   id=""
                   placeholder="Write your message here"
                   style="width: 100%; padding-bottom: 30px"
+                  required
                 ></textarea>
               </div>
             </div>
