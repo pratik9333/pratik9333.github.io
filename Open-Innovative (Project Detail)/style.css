@@ -876,7 +876,6 @@ ul {
     margin: 0;
   }
   .button-sec {
-    flex-direction: column;
     grid-gap: 1.5rem;
   }
   .IPF {
@@ -930,6 +929,17 @@ ul {
   }
   .chvron {
     text-align: center;
+  }
+  .button-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .claim-class {
+    grid-column: 1/3;
+  }
+  .button,
+  .button-outline {
+    width: 100%;
   }
 }
 @media (max-width: 370px) {
