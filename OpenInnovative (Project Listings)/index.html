@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Listings</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme",
+        ];
+        $(".input-f").autocomplete({
+          source: availableTags,
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Fixed Navbar -->
+    <section class="navbar">
+      <nav class="main-nav">
+        <img src="./Images/surface1.svg" class="logo" alt="Logo" />
+        <div class="input-class">
+          <div class="stretch">
+            <input
+              type="text"
+              placeholder="Search here ..."
+              class="input"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="logo-search">
+            <i class="fas fa-search"></i>
+          </div>
+          <div>
+            <span class="filter"
+              >Filter &nbsp;&nbsp; <i class="fas fa-chevron-down"></i>
+            </span>
+          </div>
+        </div>
+        <ul class="main-menu">
+          <li class="nav-item">
+            <a href="" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="active-nav-text nav-link">Projects</a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">Jobs</a></li>
+          <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
+          <li class="nav-item" id="login">
+            <a href="#" class="nav-link"
+              ><button class="login">Login</button></a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+
+    <div class="container">
+      <!-- main-class-container -->
+      <div class="main">
+        <!-- Section-1 -->
+        <section class="filters">
+          <div class="filter-main">
+            <div class="header-filter">Filters</div>
+            <div class="project-title">
+              <div>
+                <h1 class="headers">Project Title</h1>
+              </div>
+              <div class="input-filter">
+                <input
+                  type="text"
+                  class="input-f"
+                  placeholder="E.g. Biological AI, etc"
+                />
+              </div>
+              <div class="buttons">
+                <div>
+                  <button class="button-blue">
+                    AI/ML &nbsp; &nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    AI/ML &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    Artifical Intelligence &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    Robotics &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- University -->
+            <div class="university-title">
+              <div>
+                <h1 class="headers">University Name</h1>
+              </div>
+              <div class="input-filter">
+                <input
+                  type="text"
+                  class="input-f"
+                  placeholder="E.g. Maharashi Dayanand University"
+                />
+              </div>
+              <div class="buttons">
+                <div>
+                  <button class="button-blue">
+                    Harvard &nbsp; &nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    AI/ML &nbsp;&nbsp;<a href=""
+                      ><i class="fas fa-times"></i
+                    ></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    MDU &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    Robotics &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    MIT &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Domain -->
+            <div class="university-title">
+              <div>
+                <h1 class="headers">Domain</h1>
+              </div>
+              <div class="input-filter">
+                <input
+                  type="text"
+                  class="input-f"
+                  placeholder="E.g. Japan, Physics, License, etc"
+                />
+              </div>
+              <div class="buttons">
+                <div>
+                  <button class="button-blue">
+                    AL/ML &nbsp; &nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    AI/ML &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    Artifical Intelligence &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    Robotics &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="university-title">
+              <div>
+                <h1 class="headers">Location</h1>
+              </div>
+              <div class="input-filter">
+                <input
+                  type="text"
+                  class="input-f"
+                  placeholder="E.g. Japan, Account , Asia, etc"
+                />
+              </div>
+              <div class="buttons">
+                <div>
+                  <button class="button-blue">
+                    Delhi &nbsp; &nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    London &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-blue">
+                    Sydney &nbsp;&nbsp;
+                    <a href=""><i class="fas fa-times"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- IP Status -->
+            <div class="ip-status">
+              <div class="ip-header">
+                <h1 class="headers">Ip Status</h1>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Opportunities -->
+            <div class="ip-status">
+              <div class="ip-header">
+                <h1 class="headers">Opportunities</h1>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="ip-checkbox-class">
+                <label class="containers">
+                  <span class="lawyer">Lawyer</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section-2 -->
+        <section class="jobs">
+          <div class="input-class-2">
+            <div class="stretch">
+              <input
+                type="text"
+                placeholder="Search here ..."
+                class="input"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="logo-search">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="chvron">
+              <span class="filter"
+                >Filter &nbsp;&nbsp; <i class="fas fa-chevron-down"></i>
+              </span>
+            </div>
+          </div>
+          <div class="jobs-sec-1">
+            <h1><span class="blue">Home</span>/ Projects</h1>
+            <button class="Filter-btn">
+              <span id="change-text">Filters </span> &nbsp;&nbsp;<i
+                class="fas fa-filter"
+              ></i>
+            </button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Tabs</button>
+            <div class="dropdown-content">
+              <a class="text-job active"><p>Projects</p></a>
+              <a class="text-job black"><p>Jobs</p></a>
+              <a class="text-job"><p>Spinoffs ( Early Access )</p></a>
+              <a class="text-job"><p>Talent ( Early Access )</p></a>
+              <a class="text-job"><p>Funds ( Early Access )</p></a>
+            </div>
+          </div>
+          <div class="jobs-sec-3">
+            <div class="job-box">
+              <div class="job-box-sec1">
+                <div class="img-box">
+                  <img src="./Images/Group.svg" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-header">
+                    <h3>
+                      Environmentally Friendly Method for Recycling Plastic
+                      Waste
+                    </h3>
+                  </div>
+                  <div class="text-simple">
+                    <p>Washington State University</p>
+                  </div>
+                  <div class="text-different">
+                    <p>Created at : May 28, 2021 03:20</p>
+                  </div>
+                  <div class="bookmark">
+                    <a href=""><i class="far fa-bookmark"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="job-box-sec-2">
+                <div class="keywords">
+                  <h4>Keywords</h4>
+                  <p>
+                    Bacterial polysaccharides, Vaccines, biological,
+                    polymers,Synthetic capsular polysaccharide....
+                  </p>
+                </div>
+                <div class="domain">
+                  <h4>Domains</h4>
+                  <p>
+                    Bacterial polysaccharides, Vaccines, biological,
+                    polymers,Synthetic capsular polysaccharide....
+                  </p>
+                </div>
+              </div>
+              <div class="job-sec-3">
+                <div class="ip-type">
+                  <p>IP Type</p>
+                  <ul>
+                    <li>Copyright</li>
+                  </ul>
+                </div>
+                <div class="readlines">
+                  <p>Techn. Readiness Level</p>
+                  <div class="range-slider">
+                    <div>
+                      <span class="number">1</span>
+                    </div>
+                    <div class="slider-div">
+                      <span class="slider-no">5</span>
+                    </div>
+                    <div>
+                      <span class="number">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opportunities">
+                <div class="heading-oppor">
+                  <p>Opportunities</p>
+                </div>
+                <div class="buttons-oppor">
+                  <div>
+                    <button class="oppor">Licensing</button>
+                  </div>
+                  <div>
+                    <button class="oppor">Developent Partner</button>
+                  </div>
+                  <div>
+                    <button class="oppor">Research Collab</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="job-box-sec1">
+                <div class="img-box">
+                  <img src="./Images/Group.svg" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-header">
+                    <h3>
+                      Recycling waste plastic Synthesis of desirable monomers
+                      High pressure....
+                    </h3>
+                  </div>
+                  <div class="text-simple">
+                    <p>Augusta University</p>
+                  </div>
+                  <div class="text-different">
+                    <p>Created at : May 28, 2021 04:31</p>
+                  </div>
+                  <div class="bookmark active">
+                    <a href=""><i class="far fa-bookmark"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="job-box-sec-2">
+                <div class="keywords">
+                  <h4>Keywords</h4>
+                  <p>
+                    Carbon Dioxide, chemical recycling, Human Impacts and
+                    environmental change, Waste plastics....
+                  </p>
+                </div>
+                <div class="domain">
+                  <h4>Domains</h4>
+                  <p>
+                    Carbon Dioxide, chemical recycling, Human Impacts and
+                    environmental change, Waste plastics....
+                  </p>
+                </div>
+              </div>
+              <div class="job-sec-3">
+                <div class="ip-type">
+                  <p>IP Type</p>
+                  <ul>
+                    <li>No Patent</li>
+                  </ul>
+                </div>
+                <div class="readlines">
+                  <p>Techn. Readiness Level</p>
+                  <div class="range-slider">
+                    <div>
+                      <span class="number">1</span>
+                    </div>
+                    <div class="slider-div">
+                      <span class="slider-no">5</span>
+                    </div>
+                    <div>
+                      <span class="number">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opportunities">
+                <div class="heading-oppor">
+                  <p>Opportunities</p>
+                </div>
+                <div class="buttons-oppor">
+                  <div>
+                    <button class="oppor">Licensing</button>
+                  </div>
+                  <div>
+                    <button class="oppor">Developent Partner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="job-box-sec1">
+                <div class="img-box">
+                  <img src="./Images/Group.svg" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-header">
+                    <h3>Synthesis of Capsular Polysaccharides</h3>
+                  </div>
+                  <div class="text-simple">
+                    <p>University of California, Davis (UC Davis)</p>
+                  </div>
+                  <div class="text-different">
+                    <p>Created at : May 29, 2021 07:41</p>
+                  </div>
+                  <div class="bookmark active">
+                    <a href=""><i class="far fa-bookmark"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="job-box-sec-2">
+                <div class="keywords">
+                  <h4>Keywords</h4>
+                  <p>cell therapy, gene editing, gene therapy</p>
+                </div>
+                <div class="domain">
+                  <h4>Domains</h4>
+                  <p>cell therapy, gene editing, gene therapy</p>
+                </div>
+              </div>
+              <div class="job-sec-3">
+                <div class="ip-type">
+                  <p>IP Type</p>
+                  <ul>
+                    <li>Privisional Statement</li>
+                  </ul>
+                </div>
+                <div class="readlines">
+                  <p>Techn. Readiness Level</p>
+                  <div class="range-slider">
+                    <div>
+                      <span class="number">1</span>
+                    </div>
+                    <div class="slider-div">
+                      <span class="slider-no">5</span>
+                    </div>
+                    <div>
+                      <span class="number">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opportunities">
+                <div class="heading-oppor">
+                  <p>Opportunities</p>
+                </div>
+                <div class="buttons-oppor">
+                  <div>
+                    <button class="oppor">Licensing</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="job-box-sec1">
+                <div class="img-box">
+                  <img src="./Images/Group.svg" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-header">
+                    <h3>
+                      Environmentally Friendly Method for Recycling Plastic
+                      Waste
+                    </h3>
+                  </div>
+                  <div class="text-simple">
+                    <p>Washington State University</p>
+                  </div>
+                  <div class="text-different">
+                    <p>Created at : May 28, 2021 03:20</p>
+                  </div>
+                  <div class="bookmark">
+                    <a href=""><i class="far fa-bookmark"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="job-box-sec-2">
+                <div class="keywords">
+                  <h4>Keywords</h4>
+                  <p>
+                    Bacterial polysaccharides, Vaccines, biological,
+                    polymers,Synthetic capsular polysaccharide....
+                  </p>
+                </div>
+                <div class="domain">
+                  <h4>Domains</h4>
+                  <p>
+                    Bacterial polysaccharides, Vaccines, biological,
+                    polymers,Synthetic capsular polysaccharide....
+                  </p>
+                </div>
+              </div>
+              <div class="job-sec-3">
+                <div class="ip-type">
+                  <p>IP Type</p>
+                  <ul>
+                    <li>Copyright</li>
+                  </ul>
+                </div>
+                <div class="readlines">
+                  <p>Techn. Readiness Level</p>
+                  <div class="range-slider">
+                    <div>
+                      <span class="number">1</span>
+                    </div>
+                    <div class="slider-div">
+                      <span class="slider-no">5</span>
+                    </div>
+                    <div>
+                      <span class="number">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opportunities">
+                <div class="heading-oppor">
+                  <p>Opportunities</p>
+                </div>
+                <div class="buttons-oppor">
+                  <div>
+                    <button class="oppor">Licensing</button>
+                  </div>
+                  <div>
+                    <button class="oppor">Developent Partner</button>
+                  </div>
+                  <div>
+                    <button class="oppor">Research Collab</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="job-box-sec1">
+                <div class="img-box">
+                  <img src="./Images/Group.svg" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-header">
+                    <h3>
+                      Recycling waste plastic Synthesis of desirable monomers
+                      High pressure....
+                    </h3>
+                  </div>
+                  <div class="text-simple">
+                    <p>Augusta University</p>
+                  </div>
+                  <div class="text-different">
+                    <p>Created at : May 28, 2021 04:31</p>
+                  </div>
+                  <div class="bookmark active">
+                    <a href=""><i class="far fa-bookmark"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="job-box-sec-2">
+                <div class="keywords">
+                  <h4>Keywords</h4>
+                  <p>
+                    Carbon Dioxide, chemical recycling, Human Impacts and
+                    environmental change, Waste plastics....
+                  </p>
+                </div>
+                <div class="domain">
+                  <h4>Domains</h4>
+                  <p>
+                    Carbon Dioxide, chemical recycling, Human Impacts and
+                    environmental change, Waste plastics....
+                  </p>
+                </div>
+              </div>
+              <div class="job-sec-3">
+                <div class="ip-type">
+                  <p>IP Type</p>
+                  <ul>
+                    <li>No Patent</li>
+                  </ul>
+                </div>
+                <div class="readlines">
+                  <p>Techn. Readiness Level</p>
+                  <div class="range-slider">
+                    <div>
+                      <span class="number">1</span>
+                    </div>
+                    <div class="slider-div">
+                      <span class="slider-no">5</span>
+                    </div>
+                    <div>
+                      <span class="number">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opportunities">
+                <div class="heading-oppor">
+                  <p>Opportunities</p>
+                </div>
+                <div class="buttons-oppor">
+                  <div>
+                    <button class="oppor">Licensing</button>
+                  </div>
+                  <div>
+                    <button class="oppor">Developent Partner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="job-box-sec1">
+                <div class="img-box">
+                  <img src="./Images/Group.svg" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-header">
+                    <h3>Synthesis of Capsular Polysaccharides</h3>
+                  </div>
+                  <div class="text-simple">
+                    <p>University of California, Davis (UC Davis)</p>
+                  </div>
+                  <div class="text-different">
+                    <p>Created at : May 29, 2021 07:41</p>
+                  </div>
+                  <div class="bookmark active">
+                    <a href=""><i class="far fa-bookmark"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="job-box-sec-2">
+                <div class="keywords">
+                  <h4>Keywords</h4>
+                  <p>cell therapy, gene editing, gene therapy</p>
+                </div>
+                <div class="domain">
+                  <h4>Domains</h4>
+                  <p>cell therapy, gene editing, gene therapy</p>
+                </div>
+              </div>
+              <div class="job-sec-3">
+                <div class="ip-type">
+                  <p>IP Type</p>
+                  <ul>
+                    <li>Privisional Statement</li>
+                  </ul>
+                </div>
+                <div class="readlines">
+                  <p>Techn. Readiness Level</p>
+                  <div class="range-slider">
+                    <div>
+                      <span class="number">1</span>
+                    </div>
+                    <div class="slider-div">
+                      <span class="slider-no">5</span>
+                    </div>
+                    <div>
+                      <span class="number">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opportunities">
+                <div class="heading-oppor">
+                  <p>Opportunities</p>
+                </div>
+                <div class="buttons-oppor">
+                  <div>
+                    <button class="oppor">Licensing</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="job-box-sec1">
+                <div class="img-box">
+                  <img src="./Images/Group.svg" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-header">
+                    <h3>
+                      Environmentally Friendly Method for Recycling Plastic
+                      Waste
+                    </h3>
+                  </div>
+                  <div class="text-simple">
+                    <p>Washington State University</p>
+                  </div>
+                  <div class="text-different">
+                    <p>Created at : May 28, 2021 03:20</p>
+                  </div>
+                  <div class="bookmark">
+                    <a href=""><i class="far fa-bookmark"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="job-box-sec-2">
+                <div class="keywords">
+                  <h4>Keywords</h4>
+                  <p>
+                    Bacterial polysaccharides, Vaccines, biological,
+                    polymers,Synthetic capsular polysaccharide....
+                  </p>
+                </div>
+                <div class="domain">
+                  <h4>Domains</h4>
+                  <p>
+                    Bacterial polysaccharides, Vaccines, biological,
+                    polymers,Synthetic capsular polysaccharide....
+                  </p>
+                </div>
+              </div>
+              <div class="job-sec-3">
+                <div class="ip-type">
+                  <p>IP Type</p>
+                  <ul>
+                    <li>Copyright</li>
+                  </ul>
+                </div>
+                <div class="readlines">
+                  <p>Techn. Readiness Level</p>
+                  <div class="range-slider">
+                    <div>
+                      <span class="number">1</span>
+                    </div>
+                    <div class="slider-div">
+                      <span class="slider-no">5</span>
+                    </div>
+                    <div>
+                      <span class="number">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opportunities">
+                <div class="heading-oppor">
+                  <p>Opportunities</p>
+                </div>
+                <div class="buttons-oppor">
+                  <div>
+                    <button class="oppor">Licensing</button>
+                  </div>
+                  <div>
+                    <button class="oppor">Developent Partner</button>
+                  </div>
+                  <div>
+                    <button class="oppor">Research Collab</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="job-box-sec1">
+                <div class="img-box">
+                  <img src="./Images/Group.svg" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-header">
+                    <h3>
+                      Recycling waste plastic Synthesis of desirable monomers
+                      High pressure....
+                    </h3>
+                  </div>
+                  <div class="text-simple">
+                    <p>Augusta University</p>
+                  </div>
+                  <div class="text-different">
+                    <p>Created at : May 28, 2021 04:31</p>
+                  </div>
+                  <div class="bookmark active">
+                    <a href=""><i class="far fa-bookmark"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="job-box-sec-2">
+                <div class="keywords">
+                  <h4>Keywords</h4>
+                  <p>
+                    Carbon Dioxide, chemical recycling, Human Impacts and
+                    environmental change, Waste plastics....
+                  </p>
+                </div>
+                <div class="domain">
+                  <h4>Domains</h4>
+                  <p>
+                    Carbon Dioxide, chemical recycling, Human Impacts and
+                    environmental change, Waste plastics....
+                  </p>
+                </div>
+              </div>
+              <div class="job-sec-3">
+                <div class="ip-type">
+                  <p>IP Type</p>
+                  <ul>
+                    <li>No Patent</li>
+                  </ul>
+                </div>
+                <div class="readlines">
+                  <p>Techn. Readiness Level</p>
+                  <div class="range-slider">
+                    <div>
+                      <span class="number">1</span>
+                    </div>
+                    <div class="slider-div">
+                      <span class="slider-no">5</span>
+                    </div>
+                    <div>
+                      <span class="number">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opportunities">
+                <div class="heading-oppor">
+                  <p>Opportunities</p>
+                </div>
+                <div class="buttons-oppor">
+                  <div>
+                    <button class="oppor">Licensing</button>
+                  </div>
+                  <div>
+                    <button class="oppor">Developent Partner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="filters display-none">
+            <div class="filter-main">
+              <div class="header-filter">Filters</div>
+              <div class="project-title">
+                <div>
+                  <h1 class="headers">Project Title</h1>
+                </div>
+                <div class="input-filter">
+                  <input
+                    type="text"
+                    class="input-f"
+                    placeholder="E.g. Biological AI, etc"
+                  />
+                </div>
+                <div class="buttons">
+                  <div class="button-grp-1">
+                    <div>
+                      <button class="button-blue">
+                        AI/ML &nbsp; &nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                    <div>
+                      <button class="button-blue">
+                        AI/ML &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="button-grp-2">
+                    <div>
+                      <button class="button-blue">
+                        Artifical Intelligence &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                    <div>
+                      <button class="button-blue">
+                        Robotics &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- University -->
+              <div class="university-title">
+                <div>
+                  <h1 class="headers">University Name</h1>
+                </div>
+                <div class="input-filter">
+                  <input
+                    type="text"
+                    class="input-f"
+                    placeholder="E.g. Maharashi Dayanand University"
+                  />
+                </div>
+                <div class="buttons">
+                  <div class="button-grp-1">
+                    <div>
+                      <button class="button-blue">
+                        Harvard &nbsp; &nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                    <div>
+                      <button class="button-blue">
+                        AI/ML &nbsp;&nbsp;<a href=""
+                          ><i class="fas fa-times"></i
+                        ></a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="button-grp-2">
+                    <div>
+                      <button class="button-blue">
+                        MDU &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                    <div>
+                      <button class="button-blue">
+                        Robotics &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="button-grp-3">
+                    <div>
+                      <button class="button-blue">
+                        MIT &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Domain -->
+              <div class="university-title">
+                <div>
+                  <h1 class="headers">Domain</h1>
+                </div>
+                <div class="input-filter">
+                  <input
+                    type="text"
+                    class="input-f"
+                    placeholder="E.g. Japan, Physics, License, etc"
+                  />
+                </div>
+                <div class="buttons">
+                  <div class="button-grp-1">
+                    <div>
+                      <button class="button-blue">
+                        AL/ML &nbsp; &nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                    <div>
+                      <button class="button-blue">
+                        AI/ML &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="button-grp-2">
+                    <div>
+                      <button class="button-blue">
+                        Artifical Intelligence &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                    <div>
+                      <button class="button-blue">
+                        Robotics &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="university-title">
+                <div>
+                  <h1 class="headers">Location</h1>
+                </div>
+                <div class="input-filter">
+                  <input
+                    type="text"
+                    class="input-f"
+                    placeholder="E.g. Japan, Account , Asia, etc"
+                  />
+                </div>
+                <div class="buttons">
+                  <div class="button-grp-1">
+                    <div>
+                      <button class="button-blue">
+                        Delhi &nbsp; &nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                    <div>
+                      <button class="button-blue">
+                        London &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="button-grp-2">
+                    <div>
+                      <button class="button-blue">
+                        Sydney &nbsp;&nbsp;
+                        <a href=""><i class="fas fa-times"></i></a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- IP Status -->
+              <div class="ip-status">
+                <div class="ip-header">
+                  <h1 class="headers">Ip Status</h1>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Opportunities -->
+              <div class="ip-status">
+                <div class="ip-header">
+                  <h1 class="headers">Opportunities</h1>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="ip-checkbox-class">
+                  <label class="containers">
+                    <span class="lawyer">Lawyer</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="job-sec-4">
+            <div>
+              <a href=""><button class="outline">previous</button></a>
+            </div>
+            <div class="numbers active">
+              <a href="" class="number-a"
+                ><span style="color: #ffffff">1</span></a
+              >
+            </div>
+            <div class="numbers">
+              <a href="" class="number-a"><span>2</span></a>
+            </div>
+            <div class="numbers">
+              <a href="" class="number-a"><span>...</span></a>
+            </div>
+            <div class="numbers">
+              <a href="" class="number-a"><span>21</span></a>
+            </div>
+            <div class="numbers">
+              <a href="" class="number-a"><span>22</span></a>
+            </div>
+            <div>
+              <a href=""><button class="outline active">Next</button></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container-footer">
+        <div class="main-footer">
+          <div class="footer-sec-1">
+            <div class="img-footer">
+              <img src="./Images/logo.svg" class="logo" alt="" />
+            </div>
+            <div class="text-footer">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniamquis.
+              </p>
+            </div>
+            <div class="logo-footer">
+              <a href=""><img src="./Images/Facebook.svg" alt="" /></a>
+              <a href=""><img src="./Images/Twitter.svg" alt="" /></a>
+              <a href=""><img src="./Images/instagram.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="footer-sec-2">
+            <h2>ABOUT US</h2>
+            <ul>
+              <a href=""><li>Our Team</li></a>
+              <a href=""><li>Carrers</li></a>
+              <a href=""><li>Blogs</li></a>
+            </ul>
+          </div>
+          <div class="footer-sec-3">
+            <h2>Contact Us</h2>
+            <p>hello@abc.com</p>
+            <p>Open Innovate Inc.</p>
+            <p>1049 El Monte Avenue</p>
+            <p>Ste C #741</p>
+            <p>Mountain View CA 94040</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider-footer" />
+    <div class="footer-bottom">
+      <div class="container-footer">
+        <div class="flex-bottom">
+          <div>
+            <p>Terms and conditions</p>
+          </div>
+          <div>
+            <p>© 2021 Copyright Open Innovate, Inc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>

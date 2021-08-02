@@ -207,16 +207,15 @@ ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .group-cards-sec-1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 3rem;
 }
 .group-cards-sec-2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 3rem;
   margin-top: 65px;
 }
@@ -224,15 +223,18 @@ ul {
   background: #ffffff;
   box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
+  text-align: center;
 }
 .card {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
 }
 .card img {
-  padding: 14px 44px;
+  padding: 28px 38px;
   width: 100%;
-  max-width: 212px;
+  min-height: 240px;
+  max-width: 264px;
+  max-height: 240px;
   height: 100%;
   object-fit: contain;
 }
@@ -242,38 +244,91 @@ ul {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-}
-#odd {
-  margin-top: 4px;
-}
-#even {
-  margin-top: 16px;
-}
-.group-svg {
-  margin-top: 48px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  position: relative;
+  bottom: 22px;
 }
 
-.dot {
+/* ---------Dropdown--------- */
+.dropdown-button-sec {
+  margin-bottom: 40px;
+}
+.dropdown-button {
+  display: inline-block;
+  position: relative;
+}
+
+.dd-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 8px rgb(0 0 0 / 25%);
   cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin-left: 12px;
-  background: #cbcbd4;
-  border-radius: 100px;
-  transition: background-color 0.6s ease;
+  white-space: nowrap;
+  transition: all 0.5s;
 }
 
-.active {
-  background: #3a3a3a;
-  border-radius: 100px;
-  width: 32px;
-  height: 12px;
+.dd-button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
 }
+
+.dd-button:hover {
+  background-color: #eeeeee;
+}
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 8px rgb(0 0 0 / 25%);
+  list-style-type: none;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+}
+
+.dd-input:checked + .dd-menu {
+  display: block;
+}
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+/* ---------Dropdown--------- */
 
 /* Fading animation */
 .fade {
@@ -1123,7 +1178,7 @@ input[type="radio"]:checked + span {
   .group-cards-sec-1,
   .group-cards-sec-2 {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 3rem;
   }
   .calendar-div {
     flex-wrap: wrap;
