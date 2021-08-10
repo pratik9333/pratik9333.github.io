@@ -139,7 +139,7 @@ h1 {
   padding: 10px 20px;
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 70%;
 }
 .search-box input {
   width: 90%;
@@ -166,8 +166,8 @@ h1 {
   border-radius: 8px;
   display: flex;
   margin-top: 20px;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 70px;
+  margin-right: 70px;
   padding: 27px 15px;
   flex-direction: column;
   grid-row-gap: 2rem;
@@ -207,14 +207,21 @@ h1 {
     grid-gap: 4rem;
   }
   .intrest-row-3 {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 40px;
   }
   .button-outline {
     font-size: 18px;
   }
+  .intrest-row-4 {
+    margin-top: 40px;
+  }
   .search-box {
-    width: 67%;
+    width: 60%;
+  }
+  .intrest-row-2 {
+    margin-top: 40px;
   }
 }
 @media (min-width: 1680px) {
@@ -240,14 +247,17 @@ h1 {
   .intrest-row-3 {
     grid-row-gap: 3rem;
   }
+  .search-box {
+    width: 50%;
+  }
 }
 @media (min-width: 1780px) {
   h1 {
     font-size: 48px;
   }
   .intrest-row-3 {
-    margin-left: 170px;
-    margin-right: 170px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
   .button-outline {
     font-size: 18px;
