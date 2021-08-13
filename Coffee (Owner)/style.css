@@ -161,7 +161,9 @@ button {
   text-align: center;
   grid-gap: 1rem;
 }
-
+.arrow {
+  display: none;
+}
 .stepper-item::before {
   position: absolute;
   content: "";
@@ -352,6 +354,11 @@ button {
   .stepper-wrapper {
     flex-direction: column;
   }
+  .arrow {
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+  }
   .stepper-item::after {
     border-bottom: none;
     top: 0;
@@ -366,12 +373,8 @@ button {
   .stepper-item {
     position: none;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
-  }
-  .stepper-item::after {
-    content: url("./Images/Arrow\ 5.svg");
-    display: flex;
   }
   .stepper-item .step-counter {
     width: 70px;
@@ -381,6 +384,23 @@ button {
   }
   .step-name {
     flex: 0.5;
+  }
+  .step-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .heading-one h1,
+  .main-text {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .heading-two h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .text-main h1 {
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 @media (max-width: 1000px) {
@@ -403,13 +423,13 @@ button {
     height: 100vh;
     border-right: #ccc 1px solid;
     opacity: 0.9;
+    z-index: 9999;
     padding: 30px;
     transform: translateX(-500px);
     transition: transform 0.5s ease-in-out;
   }
   .main-nav ul.main-menu.show {
     transform: translateX(-20px);
-    z-index: 1;
   }
   .main-nav ul.main-menu li {
     padding: 10px;
@@ -428,5 +448,81 @@ button {
   }
   .main-nav ul li a {
     color: #ab85bb;
+  }
+}
+@media (max-width: 630px) {
+  .stepper-item .step-counter {
+    width: 0;
+    height: 0;
+    padding: 35px 9px;
+  }
+  .stepper-item .step-counter {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .main-nav ul li button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+  .step-name {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .heading-one h1,
+  .main-text {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .heading-two h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .main-nav ul li button {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+  .step-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .stepper-item .step-counter {
+    width: 0;
+    height: 0;
+    padding: 25px 7px;
+    font-size: 16px;
+  }
+  .stepper-item .step-counter {
+    font-size: 18px;
+    line-height: 38px;
+  }
+  .heading-one h1,
+  .main-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .heading-two h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .text-main h1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 928px) {
+  .main-footer-class {
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-gap: 6rem;
+  }
+  .footer {
+    padding: 50px 0px;
   }
 }
