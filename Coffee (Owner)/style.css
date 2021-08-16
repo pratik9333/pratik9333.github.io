@@ -148,8 +148,8 @@ button {
   margin-top: auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  margin-top: 60px;
+  margin-bottom: 80px;
+  margin-top: 25px;
   grid-gap: 2em;
 }
 .stepper-item {
