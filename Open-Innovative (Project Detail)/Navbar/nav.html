@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./nav.css" />
+  </head>
+  <body>
+    <section class="navbar">
+      <nav class="main-nav">
+        <img src="./Images/surface1.svg" class="logo" alt="Logo" />
+        <div class="input-class">
+          <div class="stretch">
+            <input
+              type="text"
+              placeholder="Search here ..."
+              class="input"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="logo-search">
+            <i class="fas fa-search"></i>
+          </div>
+          <div>
+            <span class="filter"
+              >Filter &nbsp;&nbsp; <i class="fas fa-chevron-down"></i>
+            </span>
+          </div>
+        </div>
+        <ul class="main-menu">
+          <li class="nav-item nav-item-grid">
+            <div class="profile-nav">
+              <img src="./Images/Lady.png" class="clip-path" alt="" />
+            </div>
+            <div class="row-nav">
+              <div class="myprofile">
+                <i class="fas fa-user"></i>
+                <a href="#">My Profile</a>
+              </div>
+              <div class="editprofile">
+                <i class="fas fa-edit"></i>
+                <a href="#">Edit Profile</a>
+              </div>
+            </div>
+            <div class="row-nav">
+              <div class="courses">
+                <i class="fas fa-list"></i>
+                <a href="#">My Courses</a>
+              </div>
+              <div class="premium">
+                <i class="fab fa-product-hunt"></i>
+                <a href="#">Go Premium</a>
+              </div>
+            </div>
+            <div class="row-nav">
+              <div class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="active-nav-text nav-link">Projects</a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">Jobs</a></li>
+          <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
+          <li class="nav-item" id="login">
+            <a href="#" class="nav-link nav-flex">
+              <div>
+                <img src="./Images/Lady.png" class="clip-path" alt="" />
+              </div>
+              <div class="chevron dropdown">
+                <i class="fas fa-chevron-down dropbtn" type="checkbox"></i>
+                <div class="dropdown-content">
+                  <hr class="hero" />
+                  <a href="#">My Profile</a>
+                  <a href="#">My Courses</a>
+                  <a href="#">Go Premium</a>
+                  <a href="#">Edit Profile</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+  </body>
+  <script>
+    //Navbar
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".main-menu");
+    const navLink = document.querySelectorAll(".nav-link");
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+</html>
